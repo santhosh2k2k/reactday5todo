@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-app {
+    background: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #3d405b;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-form,
+  .todo-card,
+  .filter {
+    margin: 15px 0;
+  }
+  
+  /* Todo Form Styling */
+  .todo-form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-form input,
+  .todo-form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+  }
+  
+  .todo-form button {
+    background-color: #81b29a;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-form button:hover {
+    background-color: #6b9476;
+  }
+  
+  /* Filter Styling */
+  .filter {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .filter select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+  }
+  
+  /* Todo Card Styling */
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .todo-card {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .todo-card h2 {
+    margin: 0;
+    color: #3d405b;
+  }
+  
+  .todo-card p {
+    color: #505050;
+  }
+  
+  .todo-card span {
+    color: #6a6a6a;
+    margin-bottom: 10px;
+  }
+  
+  .todo-card input,
+  .todo-card textarea,
+  .todo-card select {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+  }
+  
+  .todo-card button {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Edit Button */
+  .todo-card button:nth-child(4) {
+    background-color: #f4a261;
+    color: #ffffff;
+  }
+  
+  .todo-card button:nth-child(4):hover {
+    background-color: #e3814c;
+  }
+  
+  /* Delete Button */
+  .todo-card button:nth-child(5) {
+    background-color: #e63946;
+    color: #ffffff;
+  }
+  
+  .todo-card button:nth-child(5):hover {
+    background-color: #b03135;
+  }
+  
+  /* Select Dropdown */
+  .todo-card select {
+    width: fit-content;
+    padding: 8px;
+    background-color: #f4f4f9;
+    border: 1px solid #dcdcdc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .todo-app {
+      padding: 10px;
+    }
+  
+    .todo-form,
+    .todo-card {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
